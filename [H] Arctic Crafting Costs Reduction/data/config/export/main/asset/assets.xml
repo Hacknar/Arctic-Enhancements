@@ -1,0 +1,98 @@
+<ModOps>
+										<!--reduce cost of Lost Expedition Scrap for crafting = 10 to 2-->
+					<ModOp GUID='116158,116159,116160,116176,116177,116178,116179,116180' Path="/Values/CraftableItem/CraftingCosts/Item[Product='115980']" Type="replace" >
+						<Item>
+							<Product>115980</Product>
+							<Amount>2</Amount>
+						</Item>
+					</ModOp>
+										<!--reduce cost of Lost Expedition Scrap for crafting = 25 to 5 -->
+					<ModOp GUID='116173,116175,117302,117303,116161,116162,116163,116181,116182,116183' Path="/Values/CraftableItem/CraftingCosts/Item[Product='115980']" Type="replace" >
+						<Item>
+							<Product>115980</Product>
+							<Amount>5</Amount>
+						</Item>
+					</ModOp>					
+										<!--reduce cost of Lost Expedition Scrap for crafting =50 to 10 -->
+					<ModOp GUID='116164,116165,116166,116167,116169,116185,116187,116189,116190,116184,116186,116188' Path="/Values/CraftableItem/CraftingCosts/Item[Product='115980']" Type="replace" >
+						<Item>
+							<Product>115980</Product>
+							<Amount>10</Amount>
+						</Item>
+					</ModOp>
+	
+						<!--[Item] -->
+
+					    <!-- Give Particularly Pull-y Pulley a recipe -->
+
+    <ModOp Type="replace" GUID="116174" Path="/Values/CraftableItem">
+        <CraftableItem>
+            <CraftingCosts>
+                <Item>
+                    <Product>115980</Product>
+                    <Amount>10</Amount>
+                </Item>
+                <Item>
+                    <Product>1010249</Product>
+                    <Amount>50</Amount>
+                </Item>
+                <Item>
+                    <Product>1010224</Product>
+                    <Amount>25</Amount>
+                </Item>
+                <Item>
+                    <Product>135150</Product>
+                    <Amount>25</Amount>
+                </Item>
+                <Item>
+                    <Product>112706</Product>
+                    <Amount>50</Amount>
+                </Item>
+            </CraftingCosts>
+        </CraftableItem>
+    </ModOp>
+	    				<!-- Add Pulley to be craftable at Old N8 in Arctic -->
+		<ModOp Type="add" GUID="117422" Path="/Values/ItemCrafter/CraftableItemsInRegion/Arctic/CraftableItems">
+			<Item>
+				<Item>116174</Item>
+			</Item>
+		</ModOp>
+
+							<!--[ItemTradeUion] Cola Mola Wola -->
+							
+							<ModOp Type="add" GUID='116185' Path="/Values/ItemEffect/EffectTargets">
+								<Item>
+									<GUID>24801</GUID> <!--[Factory] Rum Hacienda Distillery -->
+								</Item>
+							</ModOp>
+	
+							<!--[ItemTradeUion] Water Cooler -->
+							
+							<ModOp Type="add" GUID='116176' Path="/Values/ItemEffect/EffectTargets">
+								<Item>
+									<GUID>25350</GUID> <!--[Factory] Schnapps Hacienda Distillery-->								
+								</Item>
+								<Item>
+									<GUID>24801</GUID> <!--[Factory] Rum Hacienda Distillery -->									
+								</Item>
+								<Item>
+									<GUID>25508</GUID> <!--[Factory] Hot Sauce Hacienda Distillery-->									
+								</Item>
+								<Item>
+									<GUID>25064</GUID> <!--[Factory] Beer Hacienda Distillery -->									
+								</Item>
+								<Item>
+									<GUID>25126</GUID> <!--[Factory] Atole Hacienda Distillery-->									
+								</Item>
+							</ModOp>
+
+</ModOps>
+
+<ModOp GUID='116158,116159,116160,116161,116162,116163,116164,116165,116166,116167,116169' Path="/Values" Type="replace" >
+</ModOp>					
+
+<ModOp GUID='116176,116177,116185,116187,116189,116190' Path="/Values" Type="replace" >
+</ModOp>	
+
+<ModOp GUID='116178,116179,116180,116181,116182,116183,116184,116186,116188' Path="/Values" Type="replace" >
+</ModOp>
